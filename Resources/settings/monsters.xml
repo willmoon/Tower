@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+    <monsters id="7">  <!--123monster随机 -->
+        <monster type="3" x="0.1" y="0.2" ></monster>
+        <monster type="0" x="0.2" y="0.2" ></monster>
+        <monster type="1" x="0.4" y="0.2" ></monster>
+        <monster type="3" x="0.5" y="0.2" ></monster>
+    </monsters>
+    <monsters id="8"> <!--123monster随机 -->
+        <monster type="1" x="0.6" y="0.2" ></monster>
+        <monster type="3" x="1.99" y="0.2" ></monster>
+        <monster type="1" x="0.8" y="0.2" ></monster>
+        <monster type="3" x="0.9" y="0.2" ></monster>
+    </monsters>
+</list>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>animations</key>
+	<dict>
+		<key>monster_1_die</key>
+		<dict>
+			<key>delay</key>
+			<real>0.20000000298023224</real>
+			CCCallFuncN::actionWithTarget(this, callfuncN_selector(HelloWorld ::dieDoneCallback)),NULL);
+
+		tem_monster ->die_action->retain ();
+			<key>frames</key>
+			<array>
+				<string>image873</string>
+				<string>image875</string>
+				<string>image877</string>
+				<string>image879</string>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>

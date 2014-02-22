@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{6e0fddca-c25c-45d6-944a-2181bdeba678}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{61be8ec4-e3b0-4f24-9ce1-ce5665ba4c28}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc</Extensions>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{47bf02ac-260b-4126-8aa1-847007af99bc}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;png;manifest</Extensions>
+    </Filter>
+    <Filter Include="LevelHelper">
+      <UniqueIdentifier>{6e64e82f-ed14-4f5c-837a-7a9f97b3890a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LevelHelper\CustomClasses">
+      <UniqueIdentifier>{615a99b3-4f6c-4d72-b04e-3cd66cf10ed2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LevelHelper\Nodes">
+      <UniqueIdentifier>{7acf1758-2be9-48b3-989d-580a91126bac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LevelHelper\Utilities">
+      <UniqueIdentifier>{341cae4d-42a4-49e1-8e34-cbb03fc5a02a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\endless_1.ico">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\CloseSelected.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\CloseNormal.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\HelloWorld.png">
+      <Filter>resource</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="endless_1.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LevelHelper\LevelHelperLoader.h">
+      <Filter>LevelHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LevelHelper\lhConfig.h">
+      <Filter>LevelHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LevelHelper\CustomClasses\LHAbstractClass.h">
+      <Filter>LevelHelper\CustomClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LevelHelper\CustomClasses\LHCustomClasses.h">
+      <Filter>LevelHelper\CustomClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LevelHelper\CustomClasses\TemporaryDummyClass.h">
+      <Filter>LevelHelper\CustomClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LevelHelper\Utilities\LHArray.h">
+      <Filter>LevelHelper\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LevelHelper\Utilities\LHDictionary.h">
+      <Filter>LevelHelper\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LevelHelper\Utilities\LHObject.h">
+      <Filter>LevelHelper\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LevelHelper\Nodes\LHAnimationNode.h">
+      <Filter>LevelHelper\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LevelHelper\Nodes\LHBatch.h">
+      <Filter>LevelHelper\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LevelHelper\Nodes\LHBezier.h">
+      <Filter>LevelHelper\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LevelHelper\Nodes\LHContactInfo.h">
+      <Filter>LevelHelper\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LevelHelper\Nodes\LHContactListener.h">
+      <Filter>LevelHelper\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LevelHelper\Nodes\LHContactNode.h">
+      <Filter>LevelHelper\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LevelHelper\Nodes\LHCustomSpriteMgr.h">
+      <Filter>LevelHelper\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LevelHelper\Nodes\LHCuttingEngineMgr.h">
+      <Filter>LevelHelper\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LevelHelper\Nodes\LHFixture.h">
+      <Filter>LevelHelper\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LevelHelper\Nodes\LHJoint.h">
+      <Filter>LevelHelper\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LevelHelper\Nodes\LHLayer.h">
+      <Filter>LevelHelper\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LevelHelper\Nodes\LHNode.h">
+      <Filter>LevelHelper\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LevelHelper\Nodes\LHParallaxNode.h">
+      <Filter>LevelHelper\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LevelHelper\Nodes\LHPathNode.h">
+      <Filter>LevelHelper\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LevelHelper\Nodes\LHSettings.h">
+      <Filter>LevelHelper\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LevelHelper\Nodes\LHSprite.h">
+      <Filter>LevelHelper\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LevelHelper\Nodes\LHTouchMgr.h">
+      <Filter>LevelHelper\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LevelHelper\Nodes\SHDocumentLoader.h">
+      <Filter>LevelHelper\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\StartLayer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\StartScene.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Tower.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tinystr.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tinyxml.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Hero.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Defines.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Monster.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ContactListener.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="Test_lev.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LevelHelper\LevelHelperLoader.cpp">
+      <Filter>LevelHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LevelHelper\CustomClasses\TemporaryDummyClass.cpp">
+      <Filter>LevelHelper\CustomClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LevelHelper\Utilities\LHArray.cpp">
+      <Filter>LevelHelper\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LevelHelper\Utilities\LHDictionary.cpp">
+      <Filter>LevelHelper\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LevelHelper\Utilities\LHObject.cpp">
+      <Filter>LevelHelper\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LevelHelper\Nodes\LHAnimationNode.cpp">
+      <Filter>LevelHelper\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LevelHelper\Nodes\LHBatch.cpp">
+      <Filter>LevelHelper\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LevelHelper\Nodes\LHBezier.cpp">
+      <Filter>LevelHelper\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LevelHelper\Nodes\LHContactInfo.cpp">
+      <Filter>LevelHelper\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LevelHelper\Nodes\LHContactListener.cpp">
+      <Filter>LevelHelper\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LevelHelper\Nodes\LHContactNode.cpp">
+      <Filter>LevelHelper\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LevelHelper\Nodes\LHCustomSpriteMgr.cpp">
+      <Filter>LevelHelper\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LevelHelper\Nodes\LHCuttingEngineMgr.cpp">
+      <Filter>LevelHelper\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LevelHelper\Nodes\LHFixture.cpp">
+      <Filter>LevelHelper\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LevelHelper\Nodes\LHJoint.cpp">
+      <Filter>LevelHelper\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LevelHelper\Nodes\LHLayer.cpp">
+      <Filter>LevelHelper\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LevelHelper\Nodes\LHNode.cpp">
+      <Filter>LevelHelper\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LevelHelper\Nodes\LHParallaxNode.cpp">
+      <Filter>LevelHelper\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LevelHelper\Nodes\LHPathNode.cpp">
+      <Filter>LevelHelper\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LevelHelper\Nodes\LHSettings.cpp">
+      <Filter>LevelHelper\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LevelHelper\Nodes\LHSprite.cpp">
+      <Filter>LevelHelper\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LevelHelper\Nodes\LHTouchMgr.cpp">
+      <Filter>LevelHelper\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LevelHelper\Nodes\SHDocumentLoader.cpp">
+      <Filter>LevelHelper\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\StartScene.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\StartLayer.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Tower.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tinystr.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tinyxml.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tinyxmlerror.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tinyxmlparser.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="Hero.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Monster.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_lev.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Classes\LevelHelper\LICENSE_LevelHelper.txt">
+      <Filter>LevelHelper</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>animations</key>
+	<dict>
+		<key>role1Climb</key>
+		<dict>
+			<key>delay</key>
+			<real>0.30000001192092896</real>
+			<key>frames</key>
+			<array>
+				<string>role_climb1</string>
+				<string>role_climb2</string>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>

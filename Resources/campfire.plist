@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>animations</key>
+	<dict>
+		<key>campfire</key>
+		<dict>
+			<key>delay</key>
+			<real>0.20000000298023224</real>
+			<key>frames</key>
+			<array>
+				<string>campfire_1</string>
+				<string>campfire_2</string>
+				<string>campfire_3</string>
+				<string>campfire_4</string>
+				<string>campfire_5</string>
+				<string>campfire_6</string>
+				<string>campfire_7</string>
+				<string>campfire_8</string>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>

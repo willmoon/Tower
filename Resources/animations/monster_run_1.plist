@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>animations</key>
+	<dict>
+		<key>monster_1_run</key>
+		<dict>
+			<key>delay</key>
+			<real>0.20000000298023224</real>
+			<key>frames</key>
+			<array>
+				<string>image775</string>
+				<string>image777</string>
+				<string>image779</string>
+				<string>image781</string>
+				<string>image783</string>
+				<string>image785</string>
+				<string>image787</string>
+				<string>image789</string>
+				<string>image791</string>
+				<string>image793</string>
+				<string>image795</string>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>animations</key>
+	<dict>
+		<key>wave</key>
+		<dict>
+			<key>delay</key>
+			<real>0.20000000298023224</real>
+			<key>frames</key>
+			<array>
+				<string>wave_1</string>
+				<string>wave_2</string>
+				<string>wave_3</string>
+				<string>wave_4</string>
+				<string>wave_5</string>
+				<string>wave_6</string>
+				<string>wave_7</string>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>
