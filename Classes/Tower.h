@@ -6,6 +6,7 @@
 #include "Box2D/Box2D.h"
 #include "SimpleAudioEngine.h"
 #include "Hero.h"
+#include "LevelHelper/LevelHelperLoader.h"
 #include "Monster.h"
 #include <map>
 #include <list>
@@ -13,6 +14,7 @@
 #include "tinyxml.h"
 #include "Defines.h"
 #include "ContactListener.h"
+#include "HRocker.h"
 
 struct monster_data
 {
@@ -30,7 +32,6 @@ public:
 	////////////////////////////////////////////////
 	b2World *m_world;
 	LevelHelperLoader *loader;
-
 	LevelHelperLoader *next_loader;
 
 	Hero *m_pHero;
@@ -40,11 +41,17 @@ public:
 	//关卡设置图
 	//map<int,list<monster_data>*> monsters_home;
 
-	//tower里面敌人组织图
+	//tower里面敌人图
 	map<int,list<Monster *>> m_pTowerMonsters;
+
+	b2Body *m_pGroudBody;
 
 	//float m_fDepth; // 深度
 	int m_iLevel;
+
+	void set_operating();
+
+	void set_hero();
 
 	CCTouch* m_pTouch;
 
@@ -53,19 +60,21 @@ public:
 	CCSprite *jump_control;
 	CCSprite *fire_control;
 
-	virtual void registerWithTouchDispatcher();//注册响应触笔事件
-	virtual void ccTouchesBegan(CCSet *pTouches, CCEvent *pEvent);
-	virtual void ccTouchesMoved(CCSet *pTouches, CCEvent *pEvent);
-	virtual void ccTouchesEnded(CCSet *pTouches, CCEvent *pEvent);
+	HRocker *rocker;	//控制摇杆
+
+
+	//virtual void registerWithTouchDispatcher();//注册响应触笔事件
+	//virtual void ccTouchesBegan(CCSet *pTouches, CCEvent *pEvent);
+	//virtual void ccTouchesMoved(CCSet *pTouches, CCEvent *pEvent);
+	//virtual void ccTouchesEnded(CCSet *pTouches, CCEvent *pEvent);
 	cocos2d ::CCLayer *operating_layer;
 	MyContactListener *contactListener;
 
-	bool left_pressed;
+	/*bool left_pressed;
 	bool right_pressed;
 	bool jump_pressed;
-	bool fire_pressed;
+	bool fire_pressed;*/
 
-	bool run_schedule;
 	static void initMonstersList();
 
 	void updateHero();
@@ -84,9 +93,9 @@ public:
 
 	void monster_patrol(float dt);
 
-	void gotonx();
+	void gotonx(float dt);
 
-	void hurted(CCObject* pSender);
+	void normalstate(CCNode* pSender);
 	// implement the "static node()" method manually
 	CREATE_FUNC(Tower);
 protected:

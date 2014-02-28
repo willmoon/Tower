@@ -37,7 +37,6 @@ distribution.
 #include <stdlib.h>
 #include <string.h>
 #include <assert.h>
-
 // Help out windows:
 #if defined( _DEBUG ) && !defined( DEBUG )
 #define DEBUG
@@ -1427,6 +1426,10 @@ public:
 	bool LoadFile( FILE*, TiXmlEncoding encoding = TIXML_DEFAULT_ENCODING );
 	/// Save a file using the given FILE*. Returns true if successful.
 	bool SaveFile( FILE* ) const;
+
+	//在Android上加载xml出现问题，现在此补充一个方法
+	bool LoadFileForAndroid( const char * filename, TiXmlEncoding encoding = TIXML_DEFAULT_ENCODING );
+
 
 	#ifdef TIXML_USE_STL
 	bool LoadFile( const std::string& filename, TiXmlEncoding encoding = TIXML_DEFAULT_ENCODING )			///< STL std::string version.

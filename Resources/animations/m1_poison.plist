@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>animations</key>
+	<dict>
+		<key>m1_poison</key>
+		<dict>
+			<key>delay</key>
+			<real>0.60000002384185791</real>
+			<key>frames</key>
+			<array>
+				<string>monster1_stand</string>
+				<string>monster1_poison1</string>
+				<string>monster1_poison2</string>
+				<string>monster1_poison3</string>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -30,6 +30,7 @@ distribution.
 #endif
 
 #include "tinyxml.h"
+//#include "platform\CCFileUtils.h"
 
 FILE* TiXmlFOpen( const char* filename, const char* mode );
 
@@ -38,6 +39,7 @@ bool TiXmlBase::condenseWhiteSpace = true;
 // Microsoft compiler security
 FILE* TiXmlFOpen( const char* filename, const char* mode )
 {
+	
 	#if defined(_MSC_VER) && (_MSC_VER >= 1400 )
 		FILE* fp = 0;
 		errno_t err = fopen_s( &fp, filename, mode );
@@ -1080,6 +1082,69 @@ bool TiXmlDocument::LoadFile( FILE* file, TiXmlEncoding encoding )
 	return !Error();
 }
 
+bool TiXmlDocument::LoadFileForAndroid( const char * filename, TiXmlEncoding encoding /*= TIXML_ENCODING_UTF8*/ )
+{
+	//if ( !filename ) 
+	//{
+	//	SetError( TIXML_ERROR_OPENING_FILE, 0, 0, TIXML_ENCODING_UNKNOWN );
+	//	return false;
+	//}
+
+	//// Delete the existing data:
+	//Clear();
+	//location.Clear();
+	//
+	//// Get the file size, so we can pre-allocate the string. HUGE speed impact.
+	//const char *pfilePath = CCFileUtils::sharedFileUtils()->fullPathFromRelativePath(filename);
+	//TIXML_STRING __filename( pfilePath );
+	//value = __filename;
+
+	//unsigned long length = 0;
+
+	//char *pBuffer =(char*) CCFileUtils::sharedFileUtils()->getFileData(pfilePath, "rt", &length);
+
+	//if (!pBuffer)
+	//{
+	//	SetError( TIXML_ERROR_OPENING_FILE, 0, 0, TIXML_ENCODING_UNKNOWN );
+	//	return false;
+	//}
+
+	//// Strange case, but good to handle up front.
+	//if ( length <= 0 )
+	//{
+	//	SetError( TIXML_ERROR_DOCUMENT_EMPTY, 0, 0, TIXML_ENCODING_UNKNOWN );
+	//	return false;
+	//}
+
+	//const char* p = pBuffer;	// the read head
+	//char* q = pBuffer;			// the write head
+	//const char CR = 0x0d;
+	//const char LF = 0x0a;
+
+	//pBuffer[length] = 0;
+	//while( *p ) {
+	//	assert( p < (pBuffer+length) );
+	//	assert( q <= (pBuffer+length) );
+	//	assert( q <= p );
+
+	//	if ( *p == CR ) {
+	//		*q++ = LF;
+	//		p++;
+	//		if ( *p == LF ) {		// check for CR+LF (and skip LF)
+	//			p++;
+	//		}
+	//	}
+	//	else {
+	//		*q++ = *p++;
+	//	}
+	//}
+	//assert( q <= (pBuffer+length) );
+	//*q = 0;
+
+	//Parse( pBuffer, 0, encoding );
+
+	return !Error();
+}
 
 bool TiXmlDocument::SaveFile( const char * filename ) const
 {

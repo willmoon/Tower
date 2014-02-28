@@ -163,6 +163,9 @@
     <ClInclude Include="Test_lev.h">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="HRocker.h">
+      <Filter>include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -268,6 +271,9 @@
       <Filter>source</Filter>
     </ClCompile>
     <ClCompile Include="Test_lev.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="HRocker.cpp">
       <Filter>source</Filter>
     </ClCompile>
   </ItemGroup>

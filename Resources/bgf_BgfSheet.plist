@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		<key>bgf1_1</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {1136, 503}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 68.5}</string>
+			<key>spriteSize</key>
+			<string>{1136, 503}</string>
+			<key>spriteSourceSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{8, 3464}, {1136, 503}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>bgf1_2</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {1136, 503}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 68.5}</string>
+			<key>spriteSize</key>
+			<string>{1136, 503}</string>
+			<key>spriteSourceSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{8, 2632}, {1136, 503}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>bgf2_1</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {1136, 640}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteSourceSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{8, 8}, {1136, 640}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>bgf2_2</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {1136, 640}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteSourceSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1160, 8}, {640, 1136}}</string>
+			<key>textureRotated</key>
+			<true/>
+		</dict>
+		<key>bgf2_3</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {1136, 640}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteSourceSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{8, 664}, {1136, 640}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>bgf3_1</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {1136, 640}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteSourceSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1160, 1160}, {640, 1136}}</string>
+			<key>textureRotated</key>
+			<true/>
+		</dict>
+		<key>bgf3_2</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {1136, 640}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteSourceSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{8, 1320}, {1136, 640}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>bgf4_1</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {1136, 640}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteSourceSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{8, 1976}, {1136, 640}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>bgf4_2</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {1136, 640}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteSourceSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1160, 2312}, {640, 1136}}</string>
+			<key>textureRotated</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>GeneratedWith</key>
+		<string>SpriteHelper</string>
+		<key>format</key>
+		<integer>3</integer>
+		<key>textureFileName</key>
+		<string>bgf_BgfSheet.png</string>
+	</dict>
+</dict>
+</plist>

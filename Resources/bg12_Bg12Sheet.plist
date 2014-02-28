@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		<key>bg1_1</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {1136, 640}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteSourceSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{8, 8}, {1136, 640}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>bg1_2</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {1136, 640}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteSourceSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1160, 8}, {1136, 640}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>bg1_3</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {1136, 640}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteSourceSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2312, 8}, {1136, 640}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>bg1_4</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {1136, 640}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteSourceSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{8, 664}, {640, 1136}}</string>
+			<key>textureRotated</key>
+			<true/>
+		</dict>
+		<key>bg1_5</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {1136, 640}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteSourceSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{8, 1816}, {640, 1136}}</string>
+			<key>textureRotated</key>
+			<true/>
+		</dict>
+		<key>bg1_6</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {1136, 640}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteSourceSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{8, 2968}, {1136, 640}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>bg2_1</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {1136, 640}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteSourceSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{664, 664}, {640, 1136}}</string>
+			<key>textureRotated</key>
+			<true/>
+		</dict>
+		<key>bg2_2</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {1136, 640}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteSourceSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{664, 1816}, {640, 1136}}</string>
+			<key>textureRotated</key>
+			<true/>
+		</dict>
+		<key>bg2_3</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {1136, 640}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteSourceSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1160, 2968}, {1136, 640}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>bg2_4</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {1136, 640}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteSourceSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2312, 664}, {1136, 640}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>bg2_5</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {1136, 640}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteSourceSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1320, 664}, {640, 1136}}</string>
+			<key>textureRotated</key>
+			<true/>
+		</dict>
+		<key>bg2_6</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {1136, 640}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteSourceSize</key>
+			<string>{1136, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1320, 1816}, {640, 1136}}</string>
+			<key>textureRotated</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>GeneratedWith</key>
+		<string>SpriteHelper</string>
+		<key>format</key>
+		<integer>3</integer>
+		<key>textureFileName</key>
+		<string>bg12_Bg12Sheet.png</string>
+	</dict>
+</dict>
+</plist>

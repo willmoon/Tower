@@ -1,0 +1,1293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Bogdan Vladu</string>
+	<key>CreatedWith</key>
+	<string>SpriteHelper</string>
+	<key>SHEETS_INFO</key>
+	<array>
+		<dict>
+			<key>2HDSuffix</key>
+			<string>-ipadhd</string>
+			<key>AllowRotation</key>
+			<true/>
+			<key>Crop</key>
+			<false/>
+			<key>DropSprites</key>
+			<false/>
+			<key>HDSuffix</key>
+			<string>-hd</string>
+			<key>IsRendable</key>
+			<true/>
+			<key>MaxSheetSize</key>
+			<integer>4096</integer>
+			<key>NpotSize</key>
+			<string>{3448, 3608}</string>
+			<key>Padding</key>
+			<integer>8</integer>
+			<key>PixelFormat</key>
+			<integer>0</integer>
+			<key>SheetImage</key>
+			<string>bg12_Bg12Sheet.png</string>
+			<key>SheetImage-HD</key>
+			<string>bg12_Bg12Sheet.png</string>
+			<key>SheetName</key>
+			<string>Bg12Sheet</string>
+			<key>SheetSceneImageName</key>
+			<string></string>
+			<key>Sheet_Sprites_Info</key>
+			<dict>
+				<key>bg1_1</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>Bg12Sheet</string>
+					<key>SHSpriteName</key>
+					<string>bg1_1</string>
+					<key>SheetImage</key>
+					<string>bg12_Bg12Sheet.png</string>
+					<key>SheetImage-HD</key>
+					<string>bg12_Bg12Sheet.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{8, 8}, {1136, 640}}</string>
+						<key>Frame-HD</key>
+						<string>{{8, 8}, {1136, 640}}</string>
+						<key>Image</key>
+						<string>bg12_Bg12Sheet.png</string>
+						<key>Image-HD</key>
+						<string>bg12_Bg12Sheet.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>bg1_1</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/chu/Desktop/tower20140118/tower140118/tower0118/image/background/bg1_1.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../image/background/bg1_1.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {1136, 640}}</string>
+						<key>OriginalSize</key>
+						<string>{1136, 640}</string>
+						<key>Position</key>
+						<string>{8, 8}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{1136, 640}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>bg1_2</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>Bg12Sheet</string>
+					<key>SHSpriteName</key>
+					<string>bg1_2</string>
+					<key>SheetImage</key>
+					<string>bg12_Bg12Sheet.png</string>
+					<key>SheetImage-HD</key>
+					<string>bg12_Bg12Sheet.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{1160, 8}, {1136, 640}}</string>
+						<key>Frame-HD</key>
+						<string>{{1160, 8}, {1136, 640}}</string>
+						<key>Image</key>
+						<string>bg12_Bg12Sheet.png</string>
+						<key>Image-HD</key>
+						<string>bg12_Bg12Sheet.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>bg1_2</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/chu/Desktop/tower20140118/tower140118/tower0118/image/background/bg1_2.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../image/background/bg1_2.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {1136, 640}}</string>
+						<key>OriginalSize</key>
+						<string>{1136, 640}</string>
+						<key>Position</key>
+						<string>{1160, 8}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{1136, 640}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>bg1_3</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>Bg12Sheet</string>
+					<key>SHSpriteName</key>
+					<string>bg1_3</string>
+					<key>SheetImage</key>
+					<string>bg12_Bg12Sheet.png</string>
+					<key>SheetImage-HD</key>
+					<string>bg12_Bg12Sheet.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{2312, 8}, {1136, 640}}</string>
+						<key>Frame-HD</key>
+						<string>{{2312, 8}, {1136, 640}}</string>
+						<key>Image</key>
+						<string>bg12_Bg12Sheet.png</string>
+						<key>Image-HD</key>
+						<string>bg12_Bg12Sheet.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>bg1_3</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/chu/Desktop/tower20140118/tower140118/tower0118/image/background/bg1_3.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../image/background/bg1_3.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {1136, 640}}</string>
+						<key>OriginalSize</key>
+						<string>{1136, 640}</string>
+						<key>Position</key>
+						<string>{2312, 8}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{1136, 640}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>bg1_4</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>Bg12Sheet</string>
+					<key>SHSpriteName</key>
+					<string>bg1_4</string>
+					<key>SheetImage</key>
+					<string>bg12_Bg12Sheet.png</string>
+					<key>SheetImage-HD</key>
+					<string>bg12_Bg12Sheet.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{8, 664}, {1136, 640}}</string>
+						<key>Frame-HD</key>
+						<string>{{8, 664}, {1136, 640}}</string>
+						<key>Image</key>
+						<string>bg12_Bg12Sheet.png</string>
+						<key>Image-HD</key>
+						<string>bg12_Bg12Sheet.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<true/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>bg1_4</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/chu/Desktop/tower20140118/tower140118/tower0118/image/background/bg1_4.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../image/background/bg1_4.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {1136, 640}}</string>
+						<key>OriginalSize</key>
+						<string>{1136, 640}</string>
+						<key>Position</key>
+						<string>{8, 664}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{1136, 640}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>bg1_5</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>Bg12Sheet</string>
+					<key>SHSpriteName</key>
+					<string>bg1_5</string>
+					<key>SheetImage</key>
+					<string>bg12_Bg12Sheet.png</string>
+					<key>SheetImage-HD</key>
+					<string>bg12_Bg12Sheet.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{8, 1816}, {1136, 640}}</string>
+						<key>Frame-HD</key>
+						<string>{{8, 1816}, {1136, 640}}</string>
+						<key>Image</key>
+						<string>bg12_Bg12Sheet.png</string>
+						<key>Image-HD</key>
+						<string>bg12_Bg12Sheet.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<true/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>bg1_5</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/chu/Desktop/tower20140118/tower140118/tower0118/image/background/bg1_5.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../image/background/bg1_5.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {1136, 640}}</string>
+						<key>OriginalSize</key>
+						<string>{1136, 640}</string>
+						<key>Position</key>
+						<string>{8, 1816}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{1136, 640}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>bg1_6</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>Bg12Sheet</string>
+					<key>SHSpriteName</key>
+					<string>bg1_6</string>
+					<key>SheetImage</key>
+					<string>bg12_Bg12Sheet.png</string>
+					<key>SheetImage-HD</key>
+					<string>bg12_Bg12Sheet.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{8, 2968}, {1136, 640}}</string>
+						<key>Frame-HD</key>
+						<string>{{8, 2968}, {1136, 640}}</string>
+						<key>Image</key>
+						<string>bg12_Bg12Sheet.png</string>
+						<key>Image-HD</key>
+						<string>bg12_Bg12Sheet.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>bg1_6</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/chu/Desktop/tower20140118/tower140118/tower0118/image/background/bg1_6.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../image/background/bg1_6.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {1136, 640}}</string>
+						<key>OriginalSize</key>
+						<string>{1136, 640}</string>
+						<key>Position</key>
+						<string>{8, 2968}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{1136, 640}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>bg2_1</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>Bg12Sheet</string>
+					<key>SHSpriteName</key>
+					<string>bg2_1</string>
+					<key>SheetImage</key>
+					<string>bg12_Bg12Sheet.png</string>
+					<key>SheetImage-HD</key>
+					<string>bg12_Bg12Sheet.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{664, 664}, {1136, 640}}</string>
+						<key>Frame-HD</key>
+						<string>{{664, 664}, {1136, 640}}</string>
+						<key>Image</key>
+						<string>bg12_Bg12Sheet.png</string>
+						<key>Image-HD</key>
+						<string>bg12_Bg12Sheet.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<true/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>bg2_1</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/chu/Desktop/tower20140118/tower140118/tower0118/image/background/bg2_1.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../image/background/bg2_1.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {1136, 640}}</string>
+						<key>OriginalSize</key>
+						<string>{1136, 640}</string>
+						<key>Position</key>
+						<string>{664, 664}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{1136, 640}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>bg2_2</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>Bg12Sheet</string>
+					<key>SHSpriteName</key>
+					<string>bg2_2</string>
+					<key>SheetImage</key>
+					<string>bg12_Bg12Sheet.png</string>
+					<key>SheetImage-HD</key>
+					<string>bg12_Bg12Sheet.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{664, 1816}, {1136, 640}}</string>
+						<key>Frame-HD</key>
+						<string>{{664, 1816}, {1136, 640}}</string>
+						<key>Image</key>
+						<string>bg12_Bg12Sheet.png</string>
+						<key>Image-HD</key>
+						<string>bg12_Bg12Sheet.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<true/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>bg2_2</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/chu/Desktop/tower20140118/tower140118/tower0118/image/background/bg2_2.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../image/background/bg2_2.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {1136, 640}}</string>
+						<key>OriginalSize</key>
+						<string>{1136, 640}</string>
+						<key>Position</key>
+						<string>{664, 1816}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{1136, 640}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>bg2_3</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>Bg12Sheet</string>
+					<key>SHSpriteName</key>
+					<string>bg2_3</string>
+					<key>SheetImage</key>
+					<string>bg12_Bg12Sheet.png</string>
+					<key>SheetImage-HD</key>
+					<string>bg12_Bg12Sheet.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{1160, 2968}, {1136, 640}}</string>
+						<key>Frame-HD</key>
+						<string>{{1160, 2968}, {1136, 640}}</string>
+						<key>Image</key>
+						<string>bg12_Bg12Sheet.png</string>
+						<key>Image-HD</key>
+						<string>bg12_Bg12Sheet.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>bg2_3</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/chu/Desktop/tower20140118/tower140118/tower0118/image/background/bg2_3.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../image/background/bg2_3.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {1136, 640}}</string>
+						<key>OriginalSize</key>
+						<string>{1136, 640}</string>
+						<key>Position</key>
+						<string>{1160, 2968}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{1136, 640}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>bg2_4</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>Bg12Sheet</string>
+					<key>SHSpriteName</key>
+					<string>bg2_4</string>
+					<key>SheetImage</key>
+					<string>bg12_Bg12Sheet.png</string>
+					<key>SheetImage-HD</key>
+					<string>bg12_Bg12Sheet.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{2312, 664}, {1136, 640}}</string>
+						<key>Frame-HD</key>
+						<string>{{2312, 664}, {1136, 640}}</string>
+						<key>Image</key>
+						<string>bg12_Bg12Sheet.png</string>
+						<key>Image-HD</key>
+						<string>bg12_Bg12Sheet.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>bg2_4</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/chu/Desktop/tower20140118/tower140118/tower0118/image/background/bg2_4.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../image/background/bg2_4.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {1136, 640}}</string>
+						<key>OriginalSize</key>
+						<string>{1136, 640}</string>
+						<key>Position</key>
+						<string>{2312, 664}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{1136, 640}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>bg2_5</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>Bg12Sheet</string>
+					<key>SHSpriteName</key>
+					<string>bg2_5</string>
+					<key>SheetImage</key>
+					<string>bg12_Bg12Sheet.png</string>
+					<key>SheetImage-HD</key>
+					<string>bg12_Bg12Sheet.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{1320, 664}, {1136, 640}}</string>
+						<key>Frame-HD</key>
+						<string>{{1320, 664}, {1136, 640}}</string>
+						<key>Image</key>
+						<string>bg12_Bg12Sheet.png</string>
+						<key>Image-HD</key>
+						<string>bg12_Bg12Sheet.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<true/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>bg2_5</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/chu/Desktop/tower20140118/tower140118/tower0118/image/background/bg2_5.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../image/background/bg2_5.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {1136, 640}}</string>
+						<key>OriginalSize</key>
+						<string>{1136, 640}</string>
+						<key>Position</key>
+						<string>{1320, 664}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{1136, 640}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>bg2_6</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>Bg12Sheet</string>
+					<key>SHSpriteName</key>
+					<string>bg2_6</string>
+					<key>SheetImage</key>
+					<string>bg12_Bg12Sheet.png</string>
+					<key>SheetImage-HD</key>
+					<string>bg12_Bg12Sheet.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{1320, 1816}, {1136, 640}}</string>
+						<key>Frame-HD</key>
+						<string>{{1320, 1816}, {1136, 640}}</string>
+						<key>Image</key>
+						<string>bg12_Bg12Sheet.png</string>
+						<key>Image-HD</key>
+						<string>bg12_Bg12Sheet.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<true/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>bg2_6</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/chu/Desktop/tower20140118/tower140118/tower0118/image/background/bg2_6.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../image/background/bg2_6.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {1136, 640}}</string>
+						<key>OriginalSize</key>
+						<string>{1136, 640}</string>
+						<key>Position</key>
+						<string>{1320, 1816}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{1136, 640}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</dict>
+			<key>Size</key>
+			<string>{4096, 4096}</string>
+			<key>Trim</key>
+			<true/>
+			<key>ZOrder</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>SH_ANIMATIONS_LIST</key>
+	<array/>
+	<key>SaveSettings</key>
+	<dict>
+		<key>Dither</key>
+		<false/>
+		<key>DocumentName</key>
+		<string>bg12</string>
+		<key>HD2XSuffix</key>
+		<string>-ipadhd</string>
+		<key>HDSuffix</key>
+		<string>-hd</string>
+		<key>ImageFormatId</key>
+		<integer>0</integer>
+		<key>Npot</key>
+		<true/>
+		<key>PvrBpp</key>
+		<integer>1</integer>
+		<key>PvrRemoveParent</key>
+		<true/>
+		<key>ResamplingAlgorithm</key>
+		<integer>0</integer>
+		<key>ResizingOptions</key>
+		<integer>0</integer>
+		<key>SaveStyle</key>
+		<integer>0</integer>
+	</dict>
+	<key>Version</key>
+	<string>1.8.224</string>
+</dict>
+</plist>
