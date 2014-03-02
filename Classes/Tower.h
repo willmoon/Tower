@@ -27,58 +27,35 @@ struct monster_data
 class Tower : public cocos2d::CCLayer
 {
 public:
-	// Here's a difference. Method 'init' in cocos2d-x returns bool, instead of returning 'id' in cocos2d-iphone
 	virtual bool init();
-	////////////////////////////////////////////////
+
 	b2World *m_world;
 	LevelHelperLoader *loader;
 	LevelHelperLoader *next_loader;
+
+	b2Body *m_pGroudBody;
 
 	Hero *m_pHero;
 
 	bool lock;
 
-	//关卡设置图
-	//map<int,list<monster_data>*> monsters_home;
-
 	//tower里面敌人图
 	map<int,list<Monster *>> m_pTowerMonsters;
 
-	b2Body *m_pGroudBody;
-
-	//float m_fDepth; // 深度
 	int m_iLevel;
 
 	void set_operating();
 
 	void set_hero();
 
-	CCTouch* m_pTouch;
-
-	CCSprite *left_control;
-	CCSprite *right_control;
-	CCSprite *jump_control;
-	CCSprite *fire_control;
-
 	HRocker *rocker;	//控制摇杆
 
-
-	//virtual void registerWithTouchDispatcher();//注册响应触笔事件
-	//virtual void ccTouchesBegan(CCSet *pTouches, CCEvent *pEvent);
-	//virtual void ccTouchesMoved(CCSet *pTouches, CCEvent *pEvent);
-	//virtual void ccTouchesEnded(CCSet *pTouches, CCEvent *pEvent);
 	cocos2d ::CCLayer *operating_layer;
 	MyContactListener *contactListener;
-
-	/*bool left_pressed;
-	bool right_pressed;
-	bool jump_pressed;
-	bool fire_pressed;*/
 
 	static void initMonstersList();
 
 	void updateHero();
-	void for_run(float dt);
 	void setViewpointCenter(CCPoint position);
 	void dieCallBack(CCNode* pSender);
 	void addMonster(monster_data monster,int num);
@@ -96,10 +73,9 @@ public:
 	void gotonx(float dt);
 
 	void normalstate(CCNode* pSender);
-	// implement the "static node()" method manually
 	CREATE_FUNC(Tower);
 protected:
 	~Tower();
 };
 
-#endif /* defined(__Deepest__Sea__) */
+#endif 

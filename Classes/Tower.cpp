@@ -44,7 +44,6 @@ void Tower::updateHero ()
 			WINSIZE .height /PTM_RATIO&&
 			m_pHero->_pBody->GetLinearVelocity ().y>=-1/PTM_RATIO&&
 			m_pHero->_pBody->GetLinearVelocity ().y <1/PTM_RATIO
-			//m_pHero->_pBody ->GetPosition ().y == ?
 			)
 		{
 			m_pHero->_bJumped =false;
@@ -76,13 +75,14 @@ void Tower::updateHero ()
 		}
 		//向上移动
 		if(rocker ->getDirection ().y<-0.9&&!m_pHero ->_bJumped
-			&&rocker ->getVelocity ()>20.0f)
+			&&rocker ->getVelocity ()>30.0f)
 		{
 			m_pHero ->_pBody ->SetLinearVelocity (b2Vec2 (0,300/PTM_RATIO));
 		}
 		//向右移动
 		if(rocker ->getDirection ().x<0&&rocker ->getDirection ().y>-0.2
-			&&rocker ->getDirection ().y <0.7&&!m_pHero ->_bJumped)
+			&&rocker ->getDirection ().y <0.7&&rocker ->getVelocity ()>10.0f
+			&&!m_pHero ->_bJumped)
 		{
 			m_pHero ->_pSprite ->setFlipX (false);
 
@@ -96,7 +96,7 @@ void Tower::updateHero ()
 		}
 		//向右上移动
 		if(rocker ->getDirection ().x<0&&rocker ->getDirection ().y <=-0.2&&
-			rocker ->getDirection ().y>=-0.9&&!m_pHero ->_bJumped&&rocker ->getVelocity ()>20.0f)
+			rocker ->getDirection ().y>=-0.9&&!m_pHero ->_bJumped&&rocker ->getVelocity ()>30.0f)
 		{
 			m_pHero ->_pSprite ->setFlipX (false);
 
@@ -121,7 +121,8 @@ void Tower::updateHero ()
 
 		//向左移动
 		if(rocker ->getDirection ().x>0&&rocker ->getDirection ().y>-0.2
-			&&rocker ->getDirection ().y <0.7&&!m_pHero ->_bJumped)
+			&&rocker ->getDirection ().y <0.7&&rocker ->getVelocity ()>10.0f
+			&&!m_pHero ->_bJumped)
 		{
 			m_pHero ->_pSprite ->setFlipX (true);
 
@@ -134,7 +135,8 @@ void Tower::updateHero ()
 		}
 		//向左上移动
 		if(rocker ->getDirection ().x>0&&rocker ->getDirection ().y <=-0.2&&
-			rocker ->getDirection ().y>=-0.8&&!m_pHero ->_bJumped&&rocker ->getVelocity ()>20)
+			rocker ->getDirection ().y>=-0.8&&!m_pHero ->_bJumped
+			&&rocker ->getVelocity ()>30)
 		{
 			m_pHero ->_pSprite ->setFlipX (true);
 
@@ -158,87 +160,6 @@ void Tower::updateHero ()
 
 		}
 
-
-		//if((left_pressed||right_pressed)&&!m_pHero->run_schedule)
-		//{
-		//	//行走的动作
-		//	if(m_pHero ->_pSprite ->numberOfRunningActions () == 0/*m_pHero ->hero_walk ->isDone ()*/)//!!!!
-		//	{
-		//		m_pHero ->_pSprite ->runAction (m_pHero ->hero_walk);
-		//	}
-
-		//	schedule (schedule_selector(Tower::for_run),0.1f);
-		//	m_pHero->run_schedule=true;
-		//}
-
-		//if(jump_pressed&&m_pHero->_bJumped==false)
-		//{
-		//	m_pHero ->_pBody->SetLinearVelocity (b2Vec2(0/PTM_RATIO,300/PTM_RATIO));
-
-		//}
-
-		//if(left_pressed&&jump_pressed&&m_pHero->_bJumped==false)
-		//{
-		//	//向左跳的动作
-		//	//m_pHero ->_pSprite ->runAction ();
-
-		//	m_pHero ->_pBody->SetLinearVelocity (b2Vec2(-100/PTM_RATIO,300/PTM_RATIO));
-
-		//}
-
-		//if(right_pressed&&jump_pressed&&m_pHero->_bJumped==false)
-		//{
-		//	//向右跳的动作
-		//	//m_pHero ->_pSprite ->runAction ();
-
-		//	m_pHero ->_pBody->SetLinearVelocity (b2Vec2(100/PTM_RATIO,300/PTM_RATIO));
-
-		//}
-
-
-		//if(fire_pressed)
-		//{
-		//	//攻击动作
-		//	/*m_pHero ->_pSprite ->runAction (CCSequence ::create ((CCFiniteTimeAction *)
-		//	m_pHero ->hero_attack,CCCallFuncN ::actionWithTarget 
-		//	(this,callfuncN_selector (Tower::hurted )),NULL) );*/
-
-		//}
-
-
-
-		//if(m_pHero ->_pBody ->GetLinearVelocity ()==b2Vec2 (0,0))
-		//{
-		//	//m_pHero ->_pSprite ->pauseAnimation ();
-		//	//m_pHero ->_pSprite ->prepareAnimationNamed ("role1Stand","roleAndObjects.pshs");
-		//	//m_pHero ->_pSprite ->playAnimation ();
-		//	//m_pHero->_pSprite ->setAnimationHasEndedObserver (this,SEL_CallFuncO (callfuncO_selector (Tower ::hurted)));
-
-		//}else
-		//{
-		//	//m_pHero ->_pSprite ->playAnimation();
-		//}
-
-
-		//if(m_pHero ->_pBody ->GetLinearVelocity ().y >5/PTM_RATIO 
-		//	&&m_pHero ->_pBody ->GetLinearVelocity ().x<-2/PTM_RATIO)
-		//{
-		//	//跳跃的动作
-		//	/*	m_pHero_sprite->prepareAnimationNamed("role1RightJump","roleAndObjects.pshs");
-		//	m_pHero_sprite->playAnimation();*/
-
-		//}
-
-
-		//if(m_pHero ->_pBody ->GetLinearVelocity ().y >10/PTM_RATIO
-		//	&&m_pHero ->_pBody ->GetLinearVelocity ().x>10)
-		//{
-		//	//跳跃的动作
-		//	/*m_pHero_sprite->prepareAnimationNamed("role1RightJump","roleAndObjects.pshs");
-		//	m_pHero_sprite->playAnimation();*/
-
-		//}
-
 	}
 }
 
@@ -247,34 +168,6 @@ void Tower::loadingProgress(float progressValue){
 }
 
 
-void Tower::for_run(float dt)
-{
-	/*if(left_pressed)
-	{
-	m_pHero ->_pSprite ->setFlipX (true);
-	if(!m_pHero ->_bJumped)
-	{
-	m_pHero ->_pBody ->SetLinearVelocity (b2Vec2 (-100/PTM_RATIO ,0));
-	}
-	else
-	{
-	m_pHero ->_pBody ->SetLinearVelocity (b2Vec2 (-10/PTM_RATIO ,0));
-	}
-	}
-
-	if(right_pressed)
-	{
-	m_pHero->_pSprite ->setFlipX (false);
-	if(!m_pHero->_bJumped)
-	{
-	m_pHero->_pBody ->SetLinearVelocity (b2Vec2 (100/PTM_RATIO ,0));
-	}
-	else
-	{
-	m_pHero->_pBody ->SetLinearVelocity (b2Vec2 (10/PTM_RATIO ,0));
-	}
-	}*/
-}
 
 //巡逻算法
 void Tower::monster_patrol(float dt)
@@ -369,10 +262,7 @@ void Tower::afterHit ()
 			CCSprite *spriteA = (CCSprite *) bodyA->GetUserData();
 			CCSprite *spriteB = (CCSprite *) bodyB->GetUserData();
 
-			CCLOG("spriteA--%s,spriteB--%s",spriteA ->description (),spriteB ->description ());
-
-			//LHSprite *tema=(LHSprite *)bodyA ->GetUserData ();
-			//LHSprite *temb=(LHSprite *)bodyB ->GetUserData ();
+			//CCLOG("spriteA--%s,spriteB--%s",spriteA ->description (),spriteB ->description ());
 
 			// Sprite A = hero, Sprite B = monster
 			if (spriteA->getTag () ==1&& spriteB->getTag () ==-1) 
@@ -936,135 +826,7 @@ void Tower ::monster_set_status ()
 
 
 
-//void Tower::registerWithTouchDispatcher()
-//{
-//	CCDirector::sharedDirector()->getTouchDispatcher()->addStandardDelegate(this, 0);
-//}
-//
-//
-//void Tower::ccTouchesBegan (CCSet *pTouches, CCEvent *pEvent)
-//{
-//	//CCLOG("%d",pTouches ->count());
-//
-//	//CCSetIterator iter = pTouches->begin();  
-//	//for (; iter != pTouches->end(); iter++)  
-//	//{  
-//	//	m_pTouch =(CCTouch*)(*iter);
-//	//	CCPoint tem_point=m_pTouch ->getLocation ();
-//
-//	//	if(left_control ->boundingBox ().containsPoint (tem_point))
-//	//	{
-//	//		left_pressed =true;
-//	//		CCLOG("left_pressed");
-//	//	}
-//	//	if(right_control ->boundingBox ().containsPoint (tem_point))
-//	//	{
-//	//		right_pressed =true;
-//	//		CCLOG("right_pressed");
-//	//	}
-//	//	if(jump_control  ->boundingBox ().containsPoint (tem_point)
-//	//		&&m_pHero->_bJumped ==false)
-//	//	{
-//	//		jump_pressed =true;
-//	//		CCLOG("jump_pressed");
-//	//	}
-//
-//	//	if(fire_control ->boundingBox ().containsPoint (tem_point))
-//	//	{
-//	//		fire_pressed =true;
-//	//		CCLOG("fire_pressed");
-//	//	}
-//
-//	//}//遍历取出每个触摸点坐标  
-//
-//}
-//
-//
-//void Tower ::ccTouchesMoved (CCSet *pTouches, CCEvent *pEvent)
-//{
-//
-//	/*CCSetIterator iter = pTouches->begin();  
-//	for (; iter != pTouches->end(); iter++)  
-//	{  
-//		m_pTouch =(CCTouch*)(*iter);
-//		CCPoint tem_point=m_pTouch ->getLocation ();
-//
-//		if(left_control ->boundingBox ().containsPoint (tem_point))
-//		{
-//			left_pressed =true;
-//			CCLOG("left_pressed");
-//		}
-//		else if(right_control ->boundingBox ().containsPoint (tem_point))
-//		{
-//			right_pressed =true;
-//			CCLOG("right_pressed");
-//		}
-//		else if(jump_control  ->boundingBox ().containsPoint (tem_point)
-//			&&m_pHero->_bJumped ==false)
-//		{
-//			jump_pressed =true;
-//			CCLOG("jump_pressed");
-//		}else if(fire_control ->boundingBox ().containsPoint (tem_point))
-//		{
-//			fire_pressed =true;
-//			CCLOG("fire_pressed");
-//		}
-//		else
-//		{
-//			left_pressed =false;
-//			right_pressed =false;
-//			jump_pressed =false;
-//			fire_pressed =false;
-//		}
-//
-//	}*/
-//}
-//
-//
-//void Tower::ccTouchesEnded (CCSet *pTouches, CCEvent *pEvent)
-//{
-//
-//	/*CCSetIterator iter = pTouches->begin();  
-//	for (; iter != pTouches->end(); iter++)  
-//	{  
-//		CCTouch* tem_touch =(CCTouch*)(*iter);
-//		CCPoint tem_point=m_pTouch ->getLocation ();
-//
-//		if(jump_control ->boundingBox ().containsPoint (tem_touch->getLocation ()))
-//		{
-//			CCLOG("jump cancelled");
-//			jump_pressed=false;
-//
-//		}
-//		if(left_control ->boundingBox ().containsPoint (tem_touch->getLocation ()))
-//		{
-//			CCLOG("left_control cancelled");
-//			left_pressed=false;
-//			unschedule (schedule_selector (Tower ::for_run ));
-//
-//			m_pHero->run_schedule =false;
-//		}
-//
-//		if(right_control ->boundingBox ().containsPoint (tem_touch->getLocation ()))
-//		{
-//			CCLOG("right_control cancelled");
-//			right_pressed=false;
-//			unschedule (schedule_selector (Tower ::for_run ));
-//
-//			m_pHero->run_schedule =false;
-//		}
-//
-//		if(fire_control ->boundingBox ().containsPoint (tem_touch ->getLocation ()))
-//		{
-//			CCLOG("fire_control cancelled");
-//			fire_pressed =false;
-//		}
-//
-//	}
-//
-//	CCLOG("%d",pTouches ->count());*/
-//
-//}
+
 
 void Tower::set_operating ()
 {
@@ -1083,39 +845,9 @@ void Tower::set_operating ()
 	spRockerBG ->setOpacity (150);
 
 	rocker=HRocker::HRockerWithCenter
-		(ccp(60.0f,250.0f),50.0f ,spRocker ,spRockerBG,true);//创建摇杆
+		(ccp(100.0f,250.0f),50.0f ,spRocker ,spRockerBG,false);//创建摇杆
 
 	operating_layer->addChild(rocker);
-
-
-	/*left_control=CCSprite ::create ("settings/tile1_L_67.png");
-	left_control ->setPosition (ccp(WINSIZE.width/10,WINSIZE .height /10));
-	right_control=CCSprite ::create ("settings/tile1_R_67.png");
-	right_control ->setPosition (ccp(WINSIZE.width/3,WINSIZE .height /10));
-	jump_control=CCSprite ::create ("settings/tile1_J_67.png");
-	jump_control ->setPosition (ccp(WINSIZE.width*7/10,WINSIZE .height /10));
-	fire_control=CCSprite ::create ("settings/tile1_F_67.png");
-	fire_control ->setPosition (ccp(WINSIZE.width*9/10,WINSIZE .height /10));
-
-	left_control->setScale (0.8f);
-	right_control->setScale (0.8f);
-	jump_control->setScale (0.8f);
-	fire_control ->setScale (0.8f);
-
-	left_control ->setOpacity (150);
-	right_control ->setOpacity (150);
-	jump_control ->setOpacity (150);
-	fire_control ->setOpacity (150);
-
-	operating_layer ->addChild (left_control);
-	operating_layer ->addChild (right_control);
-	operating_layer ->addChild (jump_control);
-	operating_layer ->addChild (fire_control);
-
-	left_pressed =false;
-	right_pressed =false;
-	jump_pressed =false;
-	fire_pressed =false;*/
 }
 
 

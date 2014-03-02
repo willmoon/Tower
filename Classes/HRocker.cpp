@@ -123,8 +123,6 @@ void  HRocker::ccTouchEnded(CCTouch* touch, CCEvent* event)
 			this->setVisible(false);
 		}
 	}
-
-	//isAttack =false;
 }
 
 HRocker* HRocker::initWithCenter
