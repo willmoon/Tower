@@ -148,9 +148,6 @@
     <ClInclude Include="..\Classes\tinyxml.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="Hero.h">
-      <Filter>include</Filter>
-    </ClInclude>
     <ClInclude Include="..\Classes\Defines.h">
       <Filter>include</Filter>
     </ClInclude>
@@ -160,10 +157,13 @@
     <ClInclude Include="..\Classes\ContactListener.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="Test_lev.h">
+    <ClInclude Include="..\Classes\Hero.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="HRocker.h">
+    <ClInclude Include="..\Classes\HRocker.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Test_lev.h">
       <Filter>include</Filter>
     </ClInclude>
   </ItemGroup>
@@ -264,16 +264,16 @@
     <ClCompile Include="..\Classes\tinyxmlparser.cpp">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="Hero.cpp">
-      <Filter>source</Filter>
-    </ClCompile>
     <ClCompile Include="..\Classes\Monster.cpp">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="Test_lev.cpp">
+    <ClCompile Include="..\Classes\Hero.cpp">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="HRocker.cpp">
+    <ClCompile Include="..\Classes\HRocker.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Test_lev.cpp">
       <Filter>source</Filter>
     </ClCompile>
   </ItemGroup>

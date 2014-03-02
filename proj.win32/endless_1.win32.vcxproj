@@ -130,6 +130,8 @@
     <ClInclude Include="..\Classes\AppDelegate.h" />
     <ClInclude Include="..\Classes\ContactListener.h" />
     <ClInclude Include="..\Classes\Defines.h" />
+    <ClInclude Include="..\Classes\Hero.h" />
+    <ClInclude Include="..\Classes\HRocker.h" />
     <ClInclude Include="..\Classes\LevelHelper\CustomClasses\LHAbstractClass.h" />
     <ClInclude Include="..\Classes\LevelHelper\CustomClasses\LHCustomClasses.h" />
     <ClInclude Include="..\Classes\LevelHelper\CustomClasses\TemporaryDummyClass.h" />
@@ -159,17 +161,17 @@
     <ClInclude Include="..\Classes\Monster.h" />
     <ClInclude Include="..\Classes\StartLayer.h" />
     <ClInclude Include="..\Classes\StartScene.h" />
+    <ClInclude Include="..\Classes\Test_lev.h" />
     <ClInclude Include="..\Classes\tinystr.h" />
     <ClInclude Include="..\Classes\tinyxml.h" />
     <ClInclude Include="..\Classes\Tower.h" />
-    <ClInclude Include="Hero.h" />
-    <ClInclude Include="HRocker.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="resource.h" />
-    <ClInclude Include="Test_lev.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\Hero.cpp" />
+    <ClCompile Include="..\Classes\HRocker.cpp" />
     <ClCompile Include="..\Classes\LevelHelper\CustomClasses\TemporaryDummyClass.cpp" />
     <ClCompile Include="..\Classes\LevelHelper\LevelHelperLoader.cpp" />
     <ClCompile Include="..\Classes\LevelHelper\Nodes\LHAnimationNode.cpp" />
@@ -196,15 +198,13 @@
     <ClCompile Include="..\Classes\Monster.cpp" />
     <ClCompile Include="..\Classes\StartLayer.cpp" />
     <ClCompile Include="..\Classes\StartScene.cpp" />
+    <ClCompile Include="..\Classes\Test_lev.cpp" />
     <ClCompile Include="..\Classes\tinystr.cpp" />
     <ClCompile Include="..\Classes\tinyxml.cpp" />
     <ClCompile Include="..\Classes\tinyxmlerror.cpp" />
     <ClCompile Include="..\Classes\tinyxmlparser.cpp" />
     <ClCompile Include="..\Classes\Tower.cpp" />
-    <ClCompile Include="Hero.cpp" />
-    <ClCompile Include="HRocker.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Test_lev.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\Classes\LevelHelper\LICENSE_LevelHelper.txt" />
