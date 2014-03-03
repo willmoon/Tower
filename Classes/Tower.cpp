@@ -72,6 +72,7 @@ void Tower::updateHero ()
 			}
 
 			rocker ->isAttack=false;
+			rocker ->setVisible (false);
 		}
 		//向上移动
 		if(rocker ->getDirection ().y<-0.9&&!m_pHero ->_bJumped
@@ -566,6 +567,7 @@ void Tower ::setLevel (int m_iLevel)
 	if(1==m_iLevel)
 	{
 		m_pGroudBody =NULL ;
+		m_pWallBody =NULL ;
 
 		//加载关卡到世界
 		m_world = new b2World(b2Vec2(0,-10));
@@ -582,11 +584,17 @@ void Tower ::setLevel (int m_iLevel)
 
 	}
 
-	//销毁第一关的边界
+	//销毁上一关的边界
 	if(m_pGroudBody !=NULL )
 	{
 		m_world ->DestroyBody (m_pGroudBody);
 		m_pGroudBody =NULL ;
+	}
+
+	if(m_pWallBody !=NULL )
+	{
+		m_world ->DestroyBody (m_pWallBody);
+		m_pWallBody =NULL ;
 	}
 
 	//建立关卡边界
@@ -603,6 +611,24 @@ void Tower ::setLevel (int m_iLevel)
 		);
 
 	m_pGroudBody ->CreateFixture(&shapeDef);
+
+	int tem;//wall的x 位置
+	tem= (m_iLevel %2 ==0 ? 6:0);
+	//建立墙的边界
+	b2BodyDef wallBodyDef;
+	wallBodyDef .position .SetZero ();
+	m_pWallBody =m_world ->CreateBody (&wallBodyDef);
+
+	b2EdgeShape wallEdge;
+	b2FixtureDef wallshapeDef;
+	wallshapeDef .shape =&wallEdge ;
+	wallEdge .Set (
+		b2Vec2(tem*WINSIZE.width/PTM_RATIO,320*(m_iLevel -1)/PTM_RATIO),
+		b2Vec2(tem*WINSIZE.width/PTM_RATIO,(320*m_iLevel)/PTM_RATIO )
+		);
+	m_pWallBody ->CreateFixture (&wallshapeDef);
+
+
 
 	//读取关卡文件，可以在一组同难度的关卡中进行随机
 	CCString *xml_path=CCString::createWithFormat ("settings/%d.xml",m_iLevel%7 +1);
@@ -845,7 +871,7 @@ void Tower::set_operating ()
 	spRockerBG ->setOpacity (150);
 
 	rocker=HRocker::HRockerWithCenter
-		(ccp(100.0f,250.0f),50.0f ,spRocker ,spRockerBG,false);//创建摇杆
+		(ccp(100.0f,250.0f),50.0f ,spRocker ,spRockerBG,true);//创建摇杆
 
 	operating_layer->addChild(rocker);
 }

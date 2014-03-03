@@ -34,6 +34,7 @@ public:
 	LevelHelperLoader *next_loader;
 
 	b2Body *m_pGroudBody;
+	b2Body *m_pWallBody;
 
 	Hero *m_pHero;
 

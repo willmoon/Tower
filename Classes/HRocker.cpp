@@ -1,4 +1,5 @@
 #include "HRocker.h"
+#include "Defines.h"
 
 void HRocker::updatePos(float dt)
 {
@@ -18,10 +19,7 @@ void HRocker::Active()
 		CCDirector ::sharedDirector ()->getTouchDispatcher ()
 			->addTargetedDelegate (this,0,false);
 	}
-	else
-	{
 
-	}
 }
 
 //解除摇杆
@@ -33,10 +31,7 @@ void   HRocker::Inactive()
 		this->unschedule(schedule_selector(HRocker::updatePos));
 		CCDirector ::sharedDirector ()->getTouchDispatcher ()->removeDelegate (this);
 	}
-	else 
-	{
 
-	}
 }
 
 //摇杆方位
@@ -66,16 +61,21 @@ bool HRocker::ccTouchBegan(CCTouch* touch, CCEvent* event)
 
 	this->setVisible(true);
 
-	CCPoint touchPoint = touch->locationInView();
+	CCPoint touchPoint = touch->getLocation ();
 
-	touchPoint = CCDirector:: sharedDirector()->convertToGL(touchPoint);
+	if(touchPoint.x >WINSIZE.width /2)
+	{
+		isAttack =true;
+
+		return false;
+	}
 
 	if(!isFollowRole)
 	{
 		if (ccpDistance(touchPoint, centerPoint) > radius)
 		{
 			//执行攻击动作
-			isAttack =true;
+			//isAttack =true;
 
 			return false;
 		}
@@ -100,8 +100,8 @@ void  HRocker::ccTouchMoved(CCTouch* touch, CCEvent* event)
 {
 	if(!isAttack)
 	{
-		CCPoint touchPoint = touch->locationInView();
-		touchPoint = CCDirector:: sharedDirector()->convertToGL(touchPoint);
+		CCPoint touchPoint = touch->getLocation ();
+
 		if (ccpDistance(touchPoint, centerPoint) > radius)
 		{
 			currentPoint =ccpAdd(centerPoint,ccpMult(ccpNormalize(ccpSub(touchPoint, centerPoint)), radius));
@@ -118,11 +118,13 @@ void  HRocker::ccTouchEnded(CCTouch* touch, CCEvent* event)
 	if(!isAttack)
 	{
 		currentPoint = centerPoint;
-		if(isFollowRole)
-		{
-			this->setVisible(false);
-		}
 	}
+
+	if(isFollowRole)
+	{
+		this->setVisible(false);
+	}
+
 }
 
 HRocker* HRocker::initWithCenter
