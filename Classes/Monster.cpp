@@ -1,6 +1,5 @@
 #include "Monster.h"
 
-
 Monster::Monster(void)
 {
 	monster_sprite =NULL;

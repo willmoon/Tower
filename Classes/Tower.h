@@ -15,6 +15,7 @@
 #include "Defines.h"
 #include "ContactListener.h"
 #include "HRocker.h"
+#include "PictureScene.h"
 
 struct monster_data
 {
@@ -32,7 +33,6 @@ public:
 	b2World *m_world;
 	LevelHelperLoader *loader;
 	LevelHelperLoader *next_loader;
-
 	b2Body *m_pGroudBody;
 	b2Body *m_pWallBody;
 
@@ -49,9 +49,19 @@ public:
 
 	void set_hero();
 
+	void pause(CCObject *pSender);
+	void resume(CCObject *pSender);
+	void tryAgain(CCObject *pSender);
+	void backMenu(CCObject *pSender);
+
 	HRocker *rocker;	//控制摇杆
 
 	cocos2d ::CCLayer *operating_layer;
+
+	cocos2d ::CCLayer *pause_layer;
+
+	cocos2d ::CCMenu *menu;
+
 	MyContactListener *contactListener;
 
 	static void initMonstersList();
@@ -67,13 +77,16 @@ public:
 
 	void afterHit();
 
-	void loadingProgress(float progressValue);
+	void loadingProgress_1(float progressValue);
+
+	void loadingProgress_2(float progressValue);
 
 	void monster_patrol(float dt);
 
 	void gotonx(float dt);
 
 	void normalstate(CCNode* pSender);
+
 	CREATE_FUNC(Tower);
 protected:
 	~Tower();

@@ -5,9 +5,9 @@ using namespace cocos2d;
 
 bool Tower::init()
 {
-
 	//设置操作层
 	set_operating ();
+
 
 	m_iLevel=1;  //第几关
 	lock=false;	//进入下一关的时候的锁
@@ -28,7 +28,9 @@ bool Tower::init()
 	setAccelerometerEnabled (true);
 	setTouchEnabled (true);
 
+
 	scheduleUpdate();
+
 	return true;
 }
 
@@ -164,8 +166,15 @@ void Tower::updateHero ()
 	}
 }
 
-void Tower::loadingProgress(float progressValue){
-	CCLog("LOAD PROGRESS IS %f", progressValue);    
+void Tower::loadingProgress_1(float progressValue)
+{
+	CCLog("LOAD PROGRESS IS %f", progressValue);   
+
+}
+
+void Tower::loadingProgress_2(float progressValue)
+{
+	CCLog("NEXT LOAD PROGRESS IS %f", progressValue);  
 }
 
 
@@ -238,12 +247,13 @@ void Tower::setViewpointCenter(CCPoint position)
 
 	this->setPosition(viewPoint);
 	operating_layer ->setPosition (operating_layer_point);
+
 }
 
 
 void Tower::normalstate(CCNode *pSender)
 {
-	CCLOG("-----------------------------------------------after action to be normal");
+	//CCLOG("-----------------------------------------------after action to be normal");
 	m_pHero ->_pSprite ->runAction (m_pHero ->hero_walk );
 }
 
@@ -470,6 +480,8 @@ void Tower::gotonx(float dt)
 
 void Tower::update(float dt)
 {
+	//CCLOG ("-----%f",percentage);
+
 	if(m_iLevel%2==1&&
 		m_pHero ->_pBody ->GetPosition ().x>568*6/PTM_RATIO &&!lock)
 	{
@@ -506,9 +518,9 @@ void Tower::update(float dt)
 	monster_set_status ();
 
 	//调用Box2d的step函数来模拟
-	this->m_world->Step(0.03f,10,10);
+	m_world->Step(0.03f,10,10);
 	//变量所有刚体列表
-	b2Body* pTempBody = this->m_world->GetBodyList();
+	b2Body* pTempBody = m_world->GetBodyList();
 	void*   pUserData = NULL;
 	for (;pTempBody;pTempBody = pTempBody->GetNext())
 	{
@@ -559,6 +571,9 @@ void Tower::initMonstersList()
 			monsters= monsters->NextSiblingElement();
 		}
 	}
+
+
+
 }
 
 
@@ -575,11 +590,19 @@ void Tower ::setLevel (int m_iLevel)
 
 		loader = new LevelHelperLoader((CCString ::createWithFormat 
 			("levels/level%d01.plhs",m_iLevel ))->getCString ());
+
+		loader->registerLoadingProgressObserver
+			(this,callfuncFloat_selector(Tower::loadingProgress_1));
+
 		loader->addObjectsToWorld(m_world ,this);
 
 		next_loader = new LevelHelperLoader((CCString ::createWithFormat 
 			("levels/level%d01.plhs",m_iLevel +2))->getCString ());
 		next_loader ->loadLevelsWithOffset (ccp(0,-640*m_iLevel));
+
+		next_loader->registerLoadingProgressObserver
+			(this,callfuncFloat_selector(Tower::loadingProgress_2));
+
 		next_loader ->addObjectsToWorld (m_world ,this);
 
 	}
@@ -712,6 +735,7 @@ void Tower::addMonster (monster_data monster,int num)
 			(CCString ::createWithFormat ("monster_%d_run-%d",3,1)->getCString ()));
 
 		tem_monster ->monster_sprite->setTag (-1);
+		//tem_monster ->monster_sprite->setAnchorPoint(CCPointZero);
 
 		addChild (tem_monster->monster_sprite);
 		tem_monster->monster_sprite->runAction (CCRepeatForever::create (tem_monster->walk_action));
@@ -862,6 +886,20 @@ void Tower::set_operating ()
 
 	addChild (operating_layer,20);
 
+	CCMenuItemImage *pPauseItem = CCMenuItemImage::create(
+		"ui/pause.png",
+		"ui/pause.png",
+		this,
+		menu_selector(Tower::pause));
+
+	pPauseItem ->setScale (0.1);
+
+	pPauseItem->setPosition(ccp(CCDirector::sharedDirector()->getWinSize().width - 40, 280));
+	CCMenu *tem=CCMenu ::create(pPauseItem ,NULL);
+	operating_layer->addChild (tem,10,11);
+	tem->setPosition (CCPointZero);
+
+
 	CCSprite *spRocker=CCSprite::create("settings/yg2.png");//摇杆
 	CCSprite *spRockerBG=CCSprite::create("settings/yg1.png");//摇杆背景
 
@@ -880,7 +918,7 @@ void Tower::set_operating ()
 void Tower::set_hero()
 {
 	m_pHero =new Hero ();
-	addChild (m_pHero->_pSprite,99,1);//标号tag为1
+	addChild (m_pHero->_pSprite,9,1);//标号tag为1
 
 	//设定body信息
 	m_pHero ->hero_bodyDef .type =b2_dynamicBody ;
@@ -905,6 +943,7 @@ void Tower::set_hero()
 	//通过fixture 把body和shape信息绑定
 	m_pHero ->_phero_fixture =m_pHero ->_pBody ->CreateFixture (&shapeDef);
 
+	//当你把一个对象作为成员变量时，并且没有把对象addChild到另外一个对象时，就需要调用retain函数.
 	//绑定动作
 	//攻击动画
 	m_pHero ->hero_attack =CCAnimate ::create (CCAnimationCache ::sharedAnimationCache ()
@@ -929,16 +968,74 @@ void Tower::set_hero()
 	m_pHero ->hero_hurt ->retain ();
 }
 
+void Tower::pause(CCObject* pSender)
+{
+
+	if(!CCDirector::sharedDirector()->isPaused())
+	{
+
+		CCMenuItemImage *resumeImage=CCMenuItemImage::create
+			("ui/resume.png", "ui/resume.png",this,menu_selector(Tower::resume));  
+
+		CCMenuItemImage *try_againImage=CCMenuItemImage::create
+			("ui/try_again.png", "ui/try_again.png",this,menu_selector(Tower::tryAgain)); 
+
+		CCMenuItemImage *backImage=CCMenuItemImage::create
+			("ui/mainMenu.png", "ui/mainMenu.png",this,menu_selector(Tower::backMenu));  
+		menu=CCMenu::create(resumeImage,try_againImage,backImage,NULL);  
+		menu->setScale (0.2f);  
+
+		menu->setPosition (ccp(WINSIZE .width/8,WINSIZE.height*1/3));
+		menu->alignItemsHorizontallyWithPadding (120);
+
+		operating_layer ->addChild(menu,100);
+
+		rocker ->Inactive();
+		CCDirector ::sharedDirector ()->pause();
+	}
+
+}
+
+void Tower::resume ( CCObject* pSender )
+{
+	menu ->removeFromParentAndCleanup(true);
+	menu =NULL;
+
+	rocker ->Active();
+	CCDirector ::sharedDirector()->resume();
+}
+
+void Tower::tryAgain ( CCObject* pSender )
+{
+	CCDirector ::sharedDirector ()->end();
+}
+
+void Tower::backMenu ( CCObject* pSender )
+{
+	//CC_SAFE_RELEASE_NULL(loader);
+
+	CCScene* pScene = StartScene::create();
+	if(CCDirector ::sharedDirector ()->isPaused())
+	{
+		CCDirector::sharedDirector()->resume();
+	}
+	CCDirector::sharedDirector()->replaceScene(CCTransitionFade::create(0.1f, pScene));
+	//CCDirector ::sharedDirector()->pushScene(pScene);
+}
+
+
 
 Tower::~Tower()
 {
+	CCLOG("Tower Layer destructed");
 
 	delete loader;
-	loader=NULL;
+	loader = NULL;
 
-	delete m_world;
+	delete next_loader;
+	next_loader = NULL;
+
+	delete m_world ;
 	m_world =NULL;
-	/*if (m_pTowerMonsters!=NULL) {
-	delete m_pSeaSprites;
-	}*/
+
 }
